@@ -1,0 +1,17 @@
+<h1>Index</h1>
+
+
+<a href="/contacts/gmail">Gmail</a>
+<a href="/contacts/hotmail">HotMail</a>
+<a href="/contacts/yahoo">Yahoo</a>
+<a href="/contacts/facebook">Facebook</a>
+<a href="/users/email">Email to User</a>
+
+		<% if !@contacts.nil?%>
+		
+    <% @contacts.each do |c|%>
+    <ul>
+    <li><%= c[:name]%> : <%= c[:email]%></li>
+    </ul>
+    <%end%>
+    <%end%>
