@@ -5,8 +5,10 @@
 #   gem 'sqlite3'
 development:
   adapter: postgresql
-  database: my_database_development
-  pool: 5
+  username: postgres
+  password: root
+  database: mydatabase
+  encoding: utf8
   timeout: 5000
 
 # Warning: The database defined as "test" will be erased and
