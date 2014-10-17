@@ -1,11 +1,16 @@
 class InvitesController < ApplicationController
   require "omnicontacts"
   def index
-    puts params.inspect
-      @contacts = request.env['omnicontacts.contacts']
-    puts @contacts.inspect
-    @user = request.env['omnicontacts.user']
-    puts @user.inspect
+    
+     @user = request.env['omnicontacts.user']
+=begin
+     if !User.exists?(:provider_id => @user.id)
+    user= User.create(email: @user.email, provider_id:@user.id)
+    user.save
+    end
+=end
+     @contacts = request.env['omnicontacts.contacts']
+     
     respond_to do |format|
       format.html
     end

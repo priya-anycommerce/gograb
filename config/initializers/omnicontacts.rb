@@ -8,9 +8,11 @@
                   # :ssl_ca_file => "/etc/ssl/certs/curl-ca-bundle.crt",
                    :max_results => 10000}
 
-    importer :yahoo, "dj0yJmk9Y2V1WEVnOUZJYVF5JmQ9WVdrOVVrSTFUazE1TkRJbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD1kYw--", "542bbf7b46ff2fa37542ff1111bf9668064f20ad", 
+    importer :yahoo, "dj0yJmk9a1BUVjdncEh1VkY5JmQ9WVdrOVVWQnRlVTU0TlRZbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD0wYw--", "541a699afaeebeec53e0eddff45728e60190c3f7", 
     {:callback_path => "/contacts/yahoo/callback"}
+    
+    importer :hotmail, "000000004C12B841", "GCGzeQhnjAfSpkdws9f4JQ-AdeJzOrrq"
 
-    importer :facebook, "781094515262205", "fc151a6703b53041953b6654e9a640eb", {:callback_path => "/invites/facebook/contact_callback"}
+    importer :facebook, "781094515262205", "fc151a6703b53041953b6654e9a640eb"#, {:callback_path => "/invites/facebook/contact_callback"}
 
     end

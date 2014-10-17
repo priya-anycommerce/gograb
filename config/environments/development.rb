@@ -26,14 +26,29 @@ Gograb::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
-  #mailer
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { :host => ENV['site_url']}
-  config.action_mailer.delivery_method = :sendmail
+# mailer
+#  config.action_mailer.perform_deliveries = true
+#  config.action_mailer.raise_delivery_errors = true
+#  config.action_mailer.default_url_options = { :host => ENV['site_url']}
+#  config.action_mailer.delivery_method = :sendmail
 # config.action_mailer.delivery_method = :sendmail
 #config.action_mailer.perform_deliveries = true
 #config.action_mailer.raise_delivery_errors = true
 #config.action_mailer.default_options = {from: 'gograb@anycommerce.co.in'}
 #mailer end
+ActionMailer::Base.delivery_method = :sendmail
+=begin
+  config.action_mailer.default_url_options = { host: 'http://www.gograb.com' }
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
+    :address => "smtp.gmail.com",
+    :port => "587",
+    :authentication => :plain,
+    :enable_starttls_auto => true,
+   :user_name => "priya@anycommerce.co.in",
+    :password => ""
+}
+=end
+
 end
