@@ -19,7 +19,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-gem "omnicontacts", :path => "vendor/bundle/omnicontacts"
+gem "omnicontacts",  '~> 0.3.5', :path => "vendor/bundle"
 gem 'thin'
 gem 'devise'
 
