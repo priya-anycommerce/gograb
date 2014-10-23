@@ -8,7 +8,7 @@
                   # :ssl_ca_file => "/etc/ssl/certs/curl-ca-bundle.crt",
                    :max_results => 10000}
 
-    importer :yahoo, "dj0yJmk9UDNONzdTWlYwV3dZJmQ9WVdrOVpEWnlNR042TXpBbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD1kNA--", "229d1303176fcef78cbbabdca151236cb58ddc14", 
+    importer :yahoo, "dj0yJmk9ZlZRRlBDcjVCc0xSJmQ9WVdrOWRsTlljVFJPTlRRbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD03Yg--", "d9d80f196787030add72c94061017689c36b9503", 
     {:callback_path => "/contacts/yahoo/callback"}
     
     importer :hotmail, "000000004C12B841", "GCGzeQhnjAfSpkdws9f4JQ-AdeJzOrrq"
